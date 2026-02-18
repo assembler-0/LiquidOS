@@ -23,6 +23,7 @@ BuildModules:
 	@cp */.Build/*.ko $(ModulesDirectory)
 	
 clean:
+	@rm -rf ./.Build
 	@for mk in $(SubMake); do \
 		$(MAKE) -C $$(dirname $$mk) clean; \
 	done

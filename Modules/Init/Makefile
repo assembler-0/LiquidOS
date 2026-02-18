@@ -31,7 +31,8 @@ Cflg := \
 -Wno-unused-variable \
 -O2 \
 -g \
--I../../Core/Headers
+-I../../Core/Headers \
+-IIncludes
 
 FinalTemp := ../.Build
 LocalTemp := .Build
@@ -39,7 +40,7 @@ LocalTemp := .Build
 ModuleName := STANDARD_Init.ko
 InstallPath := $(LocalTemp)
 
-Cs := $(wildcard *.c)
+Cs := $(shell find . -type f -name "*.c")
 Os := $(patsubst %.c,$(LocalTemp)/%.o,$(Cs))
 
 .PHONY: \
