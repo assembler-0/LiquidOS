@@ -1,6 +1,6 @@
 CHAIN ?= gcc
-TARGET_TRIPLE := x86_64-elf
-HOST_CC = cc
+TARGET_TRIPLE := x86_64-unknown-elf
+HOST_CC := 
 
 #gcc
 ifeq ($(CHAIN), gcc)
