@@ -12,9 +12,7 @@ PError(const char* Format, ...)
         Format = "(null)";
     }
 
-    PutString("[");
-    PutString("    ERROR    ");
-    PutString("]: ");
+    PutString("[    ERROR    ]: ");
 
     __builtin_va_list Arguments;
     __builtin_va_start(Arguments, Format);
@@ -44,9 +42,7 @@ PWarn(const char* Format, ...)
         Format = "(null)";
     }
 
-    PutString("[");
-    PutString("   WARNING   ");
-    PutString("]: ");
+    PutString("[   WARNING   ]: ");
 
     __builtin_va_list Arguments;
     __builtin_va_start(Arguments, Format);
@@ -76,9 +72,7 @@ PInfo(const char* Format, ...)
         Format = "(null)";
     }
 
-    PutString("[");
-    PutString(" INFORMATION ");
-    PutString("]: ");
+    PutString("[ INFORMATION ]: ");
 
     __builtin_va_list Arguments;
     __builtin_va_start(Arguments, Format);
@@ -138,9 +132,7 @@ PSuccess(const char* Format, ...)
         Format = "(null)";
     }
 
-    PutString("[");
-    PutString("   SUCCESS   ");
-    PutString("]: ");
+    PutString("[   SUCCESS   ]: ");
 
     __builtin_va_list Arguments;
     __builtin_va_start(Arguments, Format);
