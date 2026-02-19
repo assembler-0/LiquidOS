@@ -19,12 +19,12 @@ int _start(void) /*STANDARD NAME "_start"*/
 {
 	Emitter_KickStart(Error);
 
-	KrnPrintf("Hello from STANDARD_Init module!\n");
+	PInfo("Hello from STANDARD_Init module!\n");
     return GeneralOK;
 }
 
 int _exit(void) /*STANDARD NAME "_exit"*/
 {
-	KrnPrintf("Bye-Bye from STANDARD_Init module!\n");
+	PInfo("Bye-Bye from STANDARD_Init module!\n");
     return GeneralOK;
 }
